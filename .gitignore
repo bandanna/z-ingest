@@ -1,0 +1,10 @@
+# IDEs
+.idea
+
+# runtime cache
+__pycache__
+
+# application data
+data/*
+data/
+.env

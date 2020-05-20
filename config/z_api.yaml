@@ -1,0 +1,19 @@
+version: 0.1
+url: https://<some.api.path>/data
+headers:
+  Content-Type: application/json
+
+metadata:
+  read_batch_size: 100
+  s3_bucket: z-ingest-s3-bucket-name
+  s3_key: path-inside-s3-bucket
+  retry_sla: 3
+  retry_time_delta: 1
+  save_data_locally: True
+
+events:
+  - charge
+  - customer
+  - dispute
+  - event
+  - refund
